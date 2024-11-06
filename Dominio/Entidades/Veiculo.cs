@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace minimal_api.Dominio.Entidades
 {
-    public class Administrador
+    public class Veiculo
     {
         public int Id { get; set; }
 
         [Required]
-        [StringLength(255)]
-        public string Email { get; set; }
+        [StringLength(150)]
+        public string Modelo { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Senha { get; set; }
+        public string Marca { get; set; }
 
         [Required]
-        [StringLength(10)]
-        public string Perfil { get; set; }
+        public int Ano { get; set; }
     }
 }

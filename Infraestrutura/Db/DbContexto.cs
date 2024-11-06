@@ -12,6 +12,7 @@ namespace minimal_api.Infraestrutura.Db
         private readonly IConfiguration _configAppSettings = configAppSettings;
 
         public DbSet<Administrador> Administradores { get; set; }
+        public DbSet<Veiculo> Veiculos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
